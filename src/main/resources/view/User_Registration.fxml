@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.UserRegistration">
+   <children>
+      <ImageView fitHeight="580.0" fitWidth="860.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/background-image.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tbluser" layoutX="66.0" layoutY="288.0" prefHeight="255.0" prefWidth="731.0">
+        <columns>
+          <TableColumn fx:id="colname" prefWidth="161.0" text="Name" />
+          <TableColumn fx:id="colEmail" prefWidth="351.0" text="Email" />
+            <TableColumn fx:id="colpassword" prefWidth="218.0" text="Password" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="558.0" layoutY="231.0" onAction="#btnupdateonaction" prefHeight="44.0" prefWidth="114.0" style="-fx-background-color: #ff006e;" text="Update">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtName" layoutX="51.0" layoutY="93.0" prefHeight="35.0" prefWidth="252.0" promptText="Name" style="-fx-background-color: #ECE9E9; -fx-background-radius: 12;" text="Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPassword" layoutX="51.0" layoutY="169.0" prefHeight="35.0" prefWidth="215.0" style="-fx-background-color: #ECE9E9; -fx-background-radius: 12;" text="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmail" layoutX="470.0" layoutY="93.0" prefHeight="35.0" prefWidth="327.0" style="-fx-background-color: #ECE9E9; -fx-background-radius: 12;" text="Email">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <JFXButton buttonType="RAISED" layoutX="431.0" layoutY="231.0" onAction="#btnsaveonaction" prefHeight="44.0" prefWidth="114.0" style="-fx-background-color: #0081a7;" text="Save">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="683.0" layoutY="231.0" onAction="#btnupdateonaction" prefHeight="44.0" prefWidth="114.0" style="-fx-background-color: #f07167;" text="Delete">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
